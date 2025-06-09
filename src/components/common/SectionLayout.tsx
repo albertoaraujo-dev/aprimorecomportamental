@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { CSS_MEDIA_QUERY } from '../../theme/consts';
+import React from 'react'
+import styled from 'styled-components'
+import { CSS_MEDIA_QUERY } from '../../theme/consts'
 
 const StyledTitle = styled.h2`
   color: ${(props) => props.theme.textPrimary};
@@ -16,13 +16,13 @@ const StyledTitle = styled.h2`
   }
 
   &:before {
-    margin-right: 20px;
+    margin-right: 10px;
   }
 
   &:after {
-    margin-left: 20px;
+    margin-left: 10px;
   }
-`;
+`
 
 const StyledSection = styled.section`
   display: flex;
@@ -45,19 +45,19 @@ const StyledSection = styled.section`
       padding-bottom: 50px;
     }
   }
-`;
+`
 
 type Props = {
-  id: string;
-  title: string;
-  children: React.ReactNode;
-};
+  id: string
+  title: string
+  children: React.ReactNode
+}
 
 const SectionLayout: React.FC<Props> = ({ id, title, children }: Props) => (
   <StyledSection id={id}>
     <StyledTitle>{title}</StyledTitle>
     {children}
   </StyledSection>
-);
+)
 
-export default SectionLayout;
+export default SectionLayout

@@ -1,22 +1,22 @@
-import React, { useRef } from 'react';
+import React, { useRef } from 'react'
 import {
   StyledCloseSidebarIcon,
   StyledSidebar,
   StyledSidebarMenu,
-} from './style';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
-import MenuItem from './MenuItem';
-import { useOnClickOutside } from '../../helpers/customHooks';
-import { Section } from '../../consts';
+} from './style'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
+import MenuItem from './MenuItem'
+import { useOnClickOutside } from '../../helpers/customHooks'
+import { Section } from '../../consts'
 
 type Props = {
-  toggleSidebar: () => void;
-};
+  toggleSidebar: () => void
+}
 
 const Sidebar: React.FC<Props> = ({ toggleSidebar }: Props) => {
-  const sidebarRef = useRef(null);
-  useOnClickOutside(sidebarRef, toggleSidebar);
+  const sidebarRef = useRef(null)
+  useOnClickOutside(sidebarRef, toggleSidebar)
   return (
     <StyledSidebar ref={sidebarRef}>
       <StyledCloseSidebarIcon
@@ -28,7 +28,7 @@ const Sidebar: React.FC<Props> = ({ toggleSidebar }: Props) => {
       <StyledSidebarMenu>
         <MenuItem
           href={`#${Section.AboutMe}`}
-          title='Quem sou'
+          title='Quem somos'
           onClick={toggleSidebar}
         />
         <MenuItem
@@ -39,7 +39,7 @@ const Sidebar: React.FC<Props> = ({ toggleSidebar }: Props) => {
         {/* <MenuItem href={`#${Section.Projects}`} title="Contato" onClick={toggleSidebar} /> */}
       </StyledSidebarMenu>
     </StyledSidebar>
-  );
-};
+  )
+}
 
-export default Sidebar;
+export default Sidebar

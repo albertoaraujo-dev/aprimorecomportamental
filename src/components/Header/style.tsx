@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import styled, { css, keyframes } from 'styled-components';
 import { NAVBAR_HEIGHT } from '../../consts';
 import { ThemeType } from '../../types';

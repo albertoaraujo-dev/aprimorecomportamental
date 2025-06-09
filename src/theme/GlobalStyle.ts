@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
   html {
@@ -12,7 +12,7 @@ export default createGlobalStyle`
 		min-width: 320px;
 		cursor: default;
 		text-align: center;
-		background-color: #c4bbf0;
+		background-color: #eff2f5;
 	}
 
 	h1, h2 {
@@ -39,7 +39,7 @@ export default createGlobalStyle`
 	/* Scroll-bar Works on Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #363b4e #c4bbf0;
+  scrollbar-color: #737373 #eff2f5;
 }
 
 /* Scroll-bar Works on Chrome, Edge, and Safari */
@@ -52,8 +52,8 @@ export default createGlobalStyle`
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #363b4e;
+  background-color: #737373;
   //border-radius: 20px;
   
 }
-`;
+`

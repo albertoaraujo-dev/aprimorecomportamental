@@ -1,5 +1,5 @@
 {
-  "name": "sorayasite-react",
+  "name": "aprimoresite-react",
   "version": "0.1.0",
   "private": true,
   "repository": "",
@@ -27,7 +27,7 @@
     "gh-pages": "^2.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^5.0.1",
     "styled-components": "^5.1.0",
     "typescript": "^3.9.3"
   },
@@ -48,9 +48,7 @@
     "prettier": "^2.0.5",
     "react-particles-js": "^3.2.1"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
+
   "browserslist": [
     ">0.2%",
     "not dead",

@@ -1,6 +1,6 @@
 {
-  "short_name": "Alberto Araujo",
-  "name": "Alberto Araujo",
+  "short_name": "Aprimore",
+  "name": "Aprimore comportamental",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,6 +10,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#4f3b78",
-  "background_color": "#4f3b78"
+  "theme_color": "#eff2f5",
+  "background_color": "#eff2f5"
 }
