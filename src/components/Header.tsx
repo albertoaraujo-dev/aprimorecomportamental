@@ -2,9 +2,12 @@ import { Button } from '@/components/ui/button';
 import { Phone, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import Logo from '/logo.png'
+import { useIsMobile } from '@/hooks/use-mobile';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const isMobile = useIsMobile();
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -19,7 +22,7 @@ export default function Header() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-             <img src={Logo} alt="Logotipo do Site" className='h-16'/>
+             <img src={Logo} alt="Logotipo do Site" className={isMobile ? 'h-12' : 'h-16'} />
           </div>
 
           {/* Desktop Navigation */}
@@ -94,8 +97,11 @@ export default function Header() {
               >
                 Contato
               </button>
-              <Button>
-                {/* <Phone className="w-4 h-4 mr-2" /> */}
+              <Button 
+                onClick={() => scrollToSection('contato')}
+                className='bg-clinic-primary hover:bg-clinic-dark text-white'
+              >
+                <Phone className="w-4 h-4 mr-2" />
                 Agendar Consulta
               </Button>
             </div>
