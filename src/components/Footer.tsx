@@ -22,7 +22,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => document.getElementById('inicio')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="hover:text-clinic-primary transition-colors"
+                  className="hover:text-clinic-primary transition-colors cursor-pointer"
                 >
                   Início
                 </button>
@@ -30,7 +30,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => document.getElementById('servicos')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="hover:text-clinic-primary transition-colors"
+                  className="hover:text-clinic-primary transition-colors cursor-pointer"
                 >
                   Serviços
                 </button>
@@ -38,7 +38,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="hover:text-clinic-primary transition-colors"
+                  className="hover:text-clinic-primary transition-colors cursor-pointer"
                 >
                   Sobre
                 </button>
@@ -46,7 +46,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="hover:text-clinic-primary transition-colors"
+                  className="hover:text-clinic-primary transition-colors cursor-pointer"
                 >
                   Contato
                 </button>
@@ -57,9 +57,10 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Contato</h4>
             <div className="space-y-2 text-gray-300">
-              <p>(11) 9999-9999</p>
+              <p>Josita (11) 99999-9999</p>
+              <p>Soraya (11) 99999-9999</p>
               <p>contato@aprimorecomportamental.com.br</p>
-              <p>Rua das Flores, 123 - Centro<br />São Paulo - SP</p>
+              <p>Av. Imperatriz Leopoldina, 263 - Nova Petrópolis<br />São Bernardo do Campo - SP, 09770-271</p>
             </div>
           </div>
         </div>

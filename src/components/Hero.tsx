@@ -20,7 +20,7 @@ export default function Hero() {
                 <span className="block text-clinic-primary">vida mental</span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Na Aprimore Comportamental, oferecemos cuidado especializado em psicologia 
+                Oferecemos cuidado especializado em psicologia 
                 e terapia comportamental para ajudar você a alcançar o bem-estar mental.
               </p>
             </div>
@@ -29,7 +29,7 @@ export default function Hero() {
               <Button 
                 onClick={scrollToContact}
                 size="lg" 
-                className="bg-clinic-primary hover:bg-clinic-dark text-white px-8 py-4 text-lg group"
+                className="bg-clinic-primary hover:bg-clinic-dark text-white px-8 py-4 text-lg group cursor-pointer"
               >
                 Agendar Consulta
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -38,7 +38,7 @@ export default function Hero() {
                 variant="outline" 
                 size="lg"
                 onClick={() => document.getElementById('servicos')?.scrollIntoView({ behavior: 'smooth' })}
-                className="border-clinic-primary text-clinic-primary hover:bg-clinic-primary hover:text-white px-8 py-4 text-lg"
+                className="border-clinic-primary text-clinic-primary hover:bg-clinic-primary hover:text-white px-8 py-4 text-lg cursor-pointer"
               >
                 Nossos Serviços
               </Button>

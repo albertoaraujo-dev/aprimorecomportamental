@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Phone, Menu, X } from 'lucide-react';
 import { useState } from 'react';
-import Logo from '/logo.png'
+import Logo from '/logo.svg'
 import { useIsMobile } from '@/hooks/use-mobile';
 
 export default function Header() {

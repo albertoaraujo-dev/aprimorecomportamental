@@ -7,16 +7,16 @@ import { Phone, Mail, MapPin, Clock, Instagram, Facebook, Linkedin } from 'lucid
 export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically handle form submission
+
     alert('Mensagem enviada! Entraremos em contato em breve.');
   };
 
   const contactInfo = [
     {
       icon: Phone,
-      title: "Telefone",
-      content: "(11) 9999-9999",
-      action: "tel:+5511999999999"
+      title: "Telefones",
+      content: "Josita (11) 99999-9999\nSoraya (11) 99999-9999",
+      action: null
     },
     {
       icon: Mail,
@@ -27,8 +27,8 @@ export default function Contact() {
     {
       icon: MapPin,
       title: "Endereço",
-      content: "Rua das Flores, 123 - Centro\nSão Paulo - SP, 01234-567",
-      action: "https://maps.google.com"
+      content: "Av. Imperatriz Leopoldina, 263 - Nova Petrópolis\nSão Bernardo do Campo - SP, 09770-271",
+      action: "https://maps.app.goo.gl/bn4TFRWMM2NgNiMJ6"
     },
     {
       icon: Clock,
@@ -72,9 +72,7 @@ export default function Contact() {
                               rel={info.action.startsWith('http') ? 'noopener noreferrer' : undefined}
                               className="inline-block mt-2 text-clinic-primary hover:text-clinic-dark font-semibold transition-colors"
                             >
-                              {info.action.startsWith('tel:') ? 'Ligar agora' : 
-                               info.action.startsWith('mailto:') ? 'Enviar e-mail' : 
-                               'Ver no mapa'}
+                              {info.action.startsWith('mailto:') ? 'Enviar e-mail' : 'Ver no mapa'}
                             </a>
                           )}
                         </div>
@@ -93,7 +91,7 @@ export default function Contact() {
               <CardContent>
                 <div className="flex space-x-4">
                   <a
-                    href="#"
+                    href="https://www.instagram.com/aprimore.psico/"
                     className="w-12 h-12 bg-clinic-primary/10 rounded-xl flex items-center justify-center hover:bg-clinic-primary hover:text-white transition-colors group"
                   >
                     <Instagram className="w-6 h-6 text-clinic-primary group-hover:text-white" />

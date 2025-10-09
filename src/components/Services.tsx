@@ -99,7 +99,7 @@ export default function Services() {
             </p>
             <button 
               onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-clinic-primary hover:bg-clinic-dark text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+              className="bg-clinic-primary hover:bg-clinic-dark text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
             >
               Fale Conosco
             </button>
